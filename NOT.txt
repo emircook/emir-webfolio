@@ -1,0 +1,41 @@
+GİT423 · WEB TASARIMI · FİNAL — Canlı Portfolyo
+Emir Aşçı · TOBB ETÜ Görsel İletişim Tasarımı
+
+SİTE NASIL YAPILDI
+
+Siteyi bir masaüstü gibi kurdum. Üstte menü çubuğu, solda kimlik kartı, ortada işlerimin
+ikonları, altta dock var. Bir işe tıklayınca o iş bir pencere olarak açılıyor; pencereyi
+başlık çubuğundan sürükleyebiliyor, sarı düğmeyle küçültüp yeşille büyütebiliyor,
+kırmızıyla kapatabiliyorsun. Fikir Ödev 7'deki wireframe'den ve Ödev 8'deki Figma
+taslağından geldi, kod aşamasında da o kararların dışına çıkmadım.
+
+Açtığım her pencere aslında gerçek bir sayfa. akbank.html, dergi.html, hakkimda.html gibi
+dosyalar tek başlarına da açılıyor; masaüstü bunları JavaScript ile çekip pencerenin içine
+koyuyor. Böylece hem masaüstü hissi bozulmuyor hem de menüdeki her bağlantı gerçekten
+çalışıyor, adresi paylaşılabiliyor. JavaScript kapalıysa bağlantı normal sayfaya gidiyor.
+
+Palet dört renkten oluşuyor ve stil.css'in en üstünde değişken olarak duruyor: koyu zemin,
+açık pencere yüzeyi, koyu metin ve tek vurgu olarak kırmızı. Vurgu rengini sadece
+bağlantılarda ve dil çubuklarında kullandım. Yazı tipi sistem yazı tipi; site bir masaüstü
+taklidi olduğu için işletim sisteminin kendi yazısı burada kurgunun parçası. Başlık
+ölçüleri 1.25 oranlı bir ölçekten (16 / 20 / 25 / 31 px), boşluklar 8'in katlarından
+(8, 16, 24, 32, 48) geliyor.
+
+HTML tarafında stil dosyanın içine karışmıyor: bütün görünüm stil.css'te. Sayfada kalan
+tek satır içi değer, her pencerenin genişliği ve çubukların doluluk oranı gibi o örneğe
+özel sayılar; onlar da CSS değişkeni olarak yazılı, kuralın kendisi yine stil.css'te.
+
+DOSYALAR
+  index.html ......... masaüstü (ana sayfa)
+  akbank.html, instagram.html, posterler.html, dergi.html, snaxy.html ..... iş sayfaları
+  hakkimda.html, yetenekler.html, iletisim.html .......................... menü sayfaları
+  sistem-raporu.html, cop-kutusu.html ................................... masaüstü şakaları
+  stil.css ........... bütün stiller
+  site.js ............ pencere davranışı ve saat
+  gorseller/ ......... işlerimin görselleri
+
+YAPAY ZEKÂ KULLANIMI
+
+Tasarımın kendisi bana ait: masaüstü fikri, pencere düzeni, palet ve tipografi kararları
+Figma'da benim verdiğim kararlar. Yapay zekâdan (Claude) tasarımı koda çevirirken yardım
+aldım: HTML iskeleti, CSS, pencerelerin açılmasını sağlayan JavaScript. Metinleri kendi cümlelerimle yazdım, görsellerin hepsi kendi işlerim.
